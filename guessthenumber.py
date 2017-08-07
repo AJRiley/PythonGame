@@ -6,9 +6,9 @@ number = random.randint(1, 10)
 tries = 1
 
 
-uname = input("Hello, What is your username?")
+name = input("Hello, What is your username?")
 
-print("Hello", uname + ".", )
+print("Hello", name + ".", )
 
 question = input("Would you like to play a game? [Y/N] ")
 if question == "n":
@@ -25,9 +25,8 @@ while guess != number:
     tries += 1
     guess = int(input("Try again: "))
     if guess < number:
-       print("Guess Higher...")
+        print("Guess Higher...")
     if guess > number:
-       print("Guess Lower...")
+        print("Guess Lower...")
 if guess == number:
-    print("You're right! you win! The number was", number, \
-          "and it only", tries, "tries!")
+    print("You're right! you win! The number was {0} and it only took you {1} tries".format(number, tries))
