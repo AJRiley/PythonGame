@@ -16,9 +16,9 @@ if question == "n":
 
 if question == "y":
     print("I'm thinking of a number between 1 & 10")
-    guess = int(input("Have a guess: "))
-    if guess > number:
-        print("Guess lower...")
+guess = int(input("Have a guess: "))
+if guess > number:
+    print("Guess lower...")
 if guess < number:
     print("Guess higher..")
 while guess != number:
