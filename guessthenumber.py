@@ -10,13 +10,13 @@ name = input("Hello, What is your username?")
 
 print("Hello", name + ".", )
 
-question = input("Would you like to play a game? [Y/N] ")
+question = input("Would you like to play a game? [y/n] ")
 if question == "n":
-    print("oh..okay")
+    print("Oh...okay")
 
 if question == "y":
-    print("I'm thinking of a number between 1 & 10")
-guess = int(input("Have a guess: "))
+    print("I'm thinking of a number between 1 and 10")
+guess = int(input("Take a guess: "))
 if guess > number:
     print("Guess lower...")
 if guess < number:
@@ -25,8 +25,8 @@ while guess != number:
     tries += 1
     guess = int(input("Try again: "))
     if guess < number:
-        print("Guess Higher...")
+        print("Guess higher...")
     if guess > number:
-        print("Guess Lower...")
+        print("Guess lower...")
 if guess == number:
-    print("You're right! you win! The number was {0} and it only took you {1} tries".format(number, tries))
+    print("You win! The number was {0} and it only took you {1} tries!".format(number, tries))
